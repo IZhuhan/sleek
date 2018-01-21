@@ -1,0 +1,21 @@
+.btn{
+    display: inline-block;
+    font-size: $btnFontSize;
+    padding: $btnDefaultPadding;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    text-transform: uppercase;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .06);
+    transition: all.2s ease-out;
+
+    &.btn-default{
+        background-color: $defaultBtnBg;
+        border-color: $defaultBtnBorderColor;
+        color: $defaultBtnColor;
+
+        &:hover{
+            background-color: $defaultBtnHoverBg;
+            color: $defaultBtnHoverColor;
+        }
+    }
+}

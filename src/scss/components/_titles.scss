@@ -1,0 +1,8 @@
+.title{
+    font-weight: $medium;
+    color: $defaultTitleColor;
+
+    &.size-xl{
+        font-size: $titleXlSize;
+    }
+}

@@ -1,0 +1,98 @@
+.auth-container{
+    height: 100vh;
+
+    .forms-holder{
+        min-height: 400px;
+        max-width: 700px;
+        width: 100%;
+        box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .06);
+        border-radius: 5px;
+        position: relative;
+
+        .forms-controls-tab{
+            position: absolute;
+            right: 40px;
+            top: 36px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .06);
+            
+            .tab-btn{
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: $medium;
+                padding: 20px;
+                background-color: #fbfbfb;
+                border: 1px solid #eceff3;
+                color: $defaultTextColor;
+
+                &:first-child{
+                    border-right: none;
+                    border-radius: 3px 0 0 3px;
+                }
+                &:last-child{
+                    border-left: none;
+                    border-radius: 0 3px 3px 0;
+                }
+                &.active,
+                &:hover{
+                    background-color: $defaultBlueColor;
+                    color: $defaultWhiteColor;
+                    border-color: $defaultBlueColor;
+                }
+            }
+        }
+
+        .tab-pane{
+            display: none;
+
+            &.active{
+                display: block;
+            }
+
+            .auth-form-head{
+                padding: 36px 40px;
+
+                .title{
+                    margin-bottom: 5px;
+                }
+            }
+
+            .auth-form-body{
+                padding: 30px 40px 40px;
+
+                form{
+
+                    & > div{
+
+                        & + div{
+                            margin-top: 20px;
+                        }
+                    }
+
+                    .social-list{
+
+                        a{
+                            font-size: 12px;
+                            color: $defaultWhiteColor;
+                            padding: 11px;
+                            border-radius: 2px;
+                            transition: all .2s ease-out;
+
+                            &:first-child{
+                                padding: 11px 15px;
+                            }
+                            &:last-child{
+                                padding: 11px 13px;
+                            }
+                            & + a{
+                                margin-left: 10px;
+                            }
+                            &:hover{
+                                color: $defaultDarkColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.form-control{
+    width: 100%;
+    height: $inputHeight;
+    border: 1px solid $inputBorderColor;
+    background-color: $inputBg;
+    font-size: $inputFontSize;
+    color: $inputColor;
+    border-radius: $inputRadius;
+    padding: 0 30px;
+    transition: all .2s ease-out;
+
+    &:focus{
+        background-color: $inputFocusBg;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, .08);
+    }
+}
+label{
+    font-size: $labelFontSize;
+    color: $labelColor;
+    font-weight: $semiBold;
+}
+.form-group{
+    & + .form-group{
+        margin-top: 30px;
+    }
+
+    label{
+        display: block;
+        margin-bottom: 12px;
+    }
+}
+
+.checkbox-group{
+
+    label{
+        color: $defaultTextColor;
+        user-select: none;
+        cursor: pointer;
+
+        &::before{
+            content: '';
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+            background-color: transparent;
+            border: 1px solid #999da5;
+            border-radius: 2px;
+            margin-right: 13px;
+        }
+
+        & > a{
+            margin-left: 4px;
+        }
+    }
+
+    input{
+        display: none;
+
+        &:checked{
+
+            & + label{
+
+                &::before{
+                    font-family: 'FontAwesome';
+                    content: '\f00c';
+                    font-size: 9px;
+                    text-align: center;
+                    line-height: 11px;
+                }
+            }
+        }
+    }
+}

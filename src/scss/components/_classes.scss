@@ -1,0 +1,21 @@
+// Color
+.bg-white{
+    background-color: $whiteBg;
+}
+.fb-bg{
+    background-color: $facebookBg;
+}
+.google-bg{
+    background-color: $googlePlusBg;
+}
+.twitter-bg{
+    background-color: $twitterBg;
+}
+
+// Border
+.border-b{
+    border-bottom: 2px solid #eceff3;
+}
+.border-t{
+    border-top: 2px solid #eceff3;
+}
